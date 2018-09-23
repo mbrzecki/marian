@@ -1,0 +1,25 @@
+/*!
+    \page cpp_lib External libraries  
+	\brief External libraries needed to compile project.
+    
+	Libraries used in project
+    =========================
+
+    1. GNU Scientific Library
+    -------------------------
+
+    @image html gnu_logo.jpg
+
+    <b>Homepage:</b> <a href="https://www.gnu.org/software/gsl/">GNU Scientific Library</a>
+
+    <b>Licence:</b>  <a href="https://www.gnu.org/licenses/licenses.html">GNU General Public License </a>
+
+    The GNU Scientific Library (GSL) is a collection of routines for numerical computing. The library provides a wide range of mathematical routines such as random number generators, special functions and least-squares fitting. 
+
+    <b>Installation:</b><br>
+	 Download package: libgsl0 and libgsldevel from <i>Libs</i> category. <br>
+	 <b>or</b><br>
+	 Install manually:
+	 	 1. Download latest release of GSL (<a href="ftp://ftp.gnu.org/gnu/gsl/">link</a>).
+		 2. Type ./configure && make && make install
+*/

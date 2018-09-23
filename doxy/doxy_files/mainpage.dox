@@ -1,0 +1,31 @@
+
+/** \mainpage MaRiAn
+	
+	Open source C++ library aimed at providing a framework for solving parabolic PDE.
+	
+    Brief
+    =====
+	Project is aimed at providing a framework for solving parabolic Partial Differential Equation, that can be used to model convection/diffusion phenomena, heat transport or even financial instrument pricing.	
+
+	The name of the project refers to polish physicist <a href = "https://en.wikipedia.org/wiki/Marian_Smoluchowski">  Marian Smoluchowski</a> who was a pioneer of statistical physics and the kinetic theory of matter.
+	His pioneering works concerned existence of density fluctuations in the gas phase (which help to explain why sky is blue), Brownian Motion and 
+	
+	He was also avid mountaineer and watercolour painter. Below one of his works \a Alpine \a Landscape
+	@image html logo.jpg
+	
+	Project is mostly basing mostly on \a Modelling \a Derivatives \a in \a C++  J.London's book (\cite london). 
+	
+    Documentation
+    =============
+    Documentation was prepared using <a href = "http://www.doxygen.nl">  Doxygen v1.8.11</a> and applying css <a href = "https://bootswatch.com/flatly/">  Flatly </a> theme. 
+    
+	Github 
+	=========
+	
+	Repo: https://github.com/mbrzecki/marian
+	
+	Author
+    =============
+	Maciej Brzecki
+*/
+

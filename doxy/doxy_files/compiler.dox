@@ -1,0 +1,15 @@
+
+/** \page Complier
+	\brief Information about used compiler and its settings.
+	
+    Complier
+    ======
+    Project was compiled using GCC 6.4.0 compiler. No issues identified.
+	
+	Flags used in projects are:
+	- **c++11**	and **pedantic** to ensure the compliance with other compilers,
+	- **Wall** and  **Wextra** simply because it is a good practice;
+	- **O3** 	No issues with optimization found.
+	
+*/
+
