@@ -1,0 +1,98 @@
+\form#0:\[\hat{L} = -\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x} \]
+\form#1:\[ dx(t)=\mu dt+\sigma dW(t)\]
+\form#2:\[\frac{d p(t,x)}{dt} = \Big(-\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x}\Big) p(t,x) \]
+\form#3:\[dX_t = c(t,X)dt+\sigma dW_t\]
+\form#4:\[\hat{L} = \frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x} \]
+\form#5:\[\frac{d p(t,x)}{dt} = \Big(\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x}\Big) p(t,x) \]
+\form#6:\[\hat{L} = \frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu (t,x) \frac{\partial^2 }{\partial x} \]
+\form#7:\[y(x,t)|_{x=boundary} = \chi(t) \]
+\form#8:$(x_{min},x_{max})$
+\form#9:$x_K$
+\form#10:\[t_i = arcsinh\big(\frac{-k}{c} + i \delta t\big)\]
+\form#11:$k = \frac{x_K-x_{min}}{x_{max} - x_{min}}$
+\form#12:$\delta t = \frac{1}{M} \Big(arcsinh\big(\frac{t_{max}-k}{c}\big) - arcsinh\big(\frac{-k}{c}\big)\Big)$
+\form#13:\[s_i = x_{min} + (k + c \times sinh(t_i))\]
+\form#14:\[x_0 = x_{low} \]
+\form#15:\[ x_{i+1} = x_i + i \delta_x \]
+\form#16:$ i=1,\dots,N$
+\form#17:$\delta_x = \frac{x_{upp} - x_{low}}{N}$
+\form#18:\[w = A \times v\]
+\form#19:$w = A \times v$
+\form#20:\[\frac{df(x,t)}{dt} = L f(x,t)\]
+\form#21:\[ \begin{aligned} \text{in case of Forward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} & = \hat{L} f(x_i,t_{j+1}) \Rightarrow f(x_i,t_{j+1})= (I + (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j}) \\ \text{in case of Backward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} & = \hat{L} f(x_i,t_{j}) \Rightarrow f(x_i,t_{j+1})= (I - (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j+1}) \end{aligned} \]
+\form#22:\[ \begin{aligned} \text{in case of explicit scheme: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} & = \hat{L} f(x_i,t_{j}) \Rightarrow f(x_i,t_{j+1})= (I + (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j}) \\ \text{in case of explicit scheme: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} & = \hat{L} f(x_i,t_{j+1}) \Rightarrow f(x_i,t_{j})= (I - (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j+1}) \end{aligned} \]
+\form#23:$f(x_{i-1},t_{i}),f(x_{i},t_{i}),f(x_{i+1},t_{i})$
+\form#24:$f(x_{i},t_{i+1})$
+\form#25:\[ \begin{aligned} \text{in case of Forward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} & = \hat{L} f(x_i,t_{j+1}) \Rightarrow f(x_i,t_{j})= (I + (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j+1}) \\ \text{in case of Backward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} & = \hat{L} f(x_i,t_{j}) \Rightarrow f(x_i,t_{j+1})= (I - (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j}) \end{aligned} \]
+\form#26:\[ \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} + \begin{pmatrix}d_1 & e_1 \\f_1 & d_2 & e_2 \\& f_2 & \ddots & \ddots \\& & \ddots & \ddots & e_{n-1} \\& & & f_{n-1} & d_n\end{pmatrix} = \begin{pmatrix}a_1 + d_1 & b_1 + e_1 \\ c_1 + f_1 & a_2 + d_2 & b_2 + e_2 \\& c_2 + f_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} + e_{n-1} \\& & & c_{n-1} + f_{n-1} & a_n + d_n\end{pmatrix} \]
+\form#27:\[ \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} - \begin{pmatrix}d_1 & e_1 \\f_1 & d_2 & e_2 \\& f_2 & \ddots & \ddots \\& & \ddots & \ddots & e_{n-1} \\& & & f_{n-1} & d_n\end{pmatrix} = \begin{pmatrix}a_1 - d_1 & b_1 - e_1 \\ c_1 - f_1 & a_2 - d_2 & b_2 - e_2 \\& c_2 - f_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} - e_{n-1} \\& & & c_{n-1} - f_{n-1} & a_n - d_n\end{pmatrix} \]
+\form#28:\[ x \times \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} = \begin{pmatrix}x \times a_1 & x \times b_1 \\x \times c_1 & x \times a_2 & x \times b_2 \\& x \times c_2 & \ddots & \ddots \\& & \ddots & \ddots & x \times b_{n-1} \\& & & x \times c_{n-1} & x \times a_n\end{pmatrix} \]
+\form#29:\[ \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} \times x = x \times \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} = \begin{pmatrix}x \times a_1 & x \times b_1 \\x \times c_1 & x \times a_2 & x \times b_2 \\& x \times c_2 & \ddots & \ddots \\& & \ddots & \ddots & x \times b_{n-1} \\& & & x \times c_{n-1} & x \times a_n\end{pmatrix} \]
+\form#30:\[ \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} \div x = \begin{pmatrix}a_1 \div x & b_1 \div x \\ c_1 \div x & a_2 \div x & b_2 \div x \\& c_2 \div x & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \div x \\& & & c_{n-1} \div x & a_n \div x\end{pmatrix} \]
+\form#31:\[w = A \times v = \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix} \times \begin{pmatrix} v_1 \\ v_2 \\ v_3 \\ \vdots \\ v_{n-1} \\ v_n\end{pmatrix} = \begin{pmatrix} a_1 v_1 + v_2 b_1 \\ c_1 v_1 + a_2 v_2 + b_2 v_3 \\ \vdots \\ \vdots \\ c_{n-2} v_{n-2} + a_{n-1} v_{n-1} + b_{n-1} v_{n} \\ c_{n-1} v_{n-1} + a_n v_n \end{pmatrix} \]
+\form#32:\[Tridiag = \begin{pmatrix}a_1 & b_1 \\c_1 & a_2 & b_2 \\& c_2 & \ddots & \ddots \\& & \ddots & \ddots & b_{n-1} \\& & & c_{n-1} & a_n\end{pmatrix}\]
+\form#33:\[f''(x_i)\approx {\frac {\delta _{h}^{2}f(x_i)}{h^{2}}}={\frac {f(x_i+h)-2f(x_i)+f(x_i-h)}{h^{2}}}\]
+\form#34:\[f''(x) \approx {\frac {f(x_i+h)-2f(x_i)+f(x_i-h)}{h^{2}}}=\frac{1}{h^2} \begin{pmatrix} -2.0 & 1.0 \\ 1.0 & -2.0 & 1.0 \\ & 1.0 & -2.0 & 1.0 \\ & & \ddots & \ddots & \ddots \\ & & 1.0 & -2.0 & 1.0 & \\ & & & 1.0 & -2.0 \end{pmatrix} \begin{pmatrix} f(x_1) \\ f(x_2) \\ f(x_3) \\ \vdots \\ f(x_{n-1}) \\ f_n\end{pmatrix} \]
+\form#35:$x_{i+1} = x_{i} + h$
+\form#36:$ D_{+} $
+\form#37:\[ \frac{\partial u}{\partial x}\Big|_{x=x_i} \approx \frac{u_{i+1}-u_{i}}{h} = D_{+} u_{i} \]
+\form#38:$u_i = f(x_i), u_{i+1} = f(x_i + h)$
+\form#39:\[\begin{pmatrix} 1 & 0 \\ 0 & -\frac{1}{h} & \frac{1}{h} \\ & 0 & -\frac{1}{h} & \frac{1}{h} \\ & & \ddots & \ddots & \ddots \\ & & & 0 & -\frac{1}{h} & \frac{1}{h} & \\ & & & & 0 & 1 \end{pmatrix}\]
+\form#40:$ D_{-} $
+\form#41:\[ \frac{\partial u}{\partial x}\Big|_{x=x_i} \approx \frac{u_{i}-u_{i-1}}{h} = D_{-} u_{i} \]
+\form#42:$u_i = f(x_i), u_{i-1} = f(x_i - h)$
+\form#43:\[\begin{pmatrix}1 & 0 \\ -\frac{1}{h} & \frac{1}{h} & 0 \\ & -\frac{1}{h} & \frac{1}{h} & 0 \\ & & \ddots & \ddots & \ddots \\ & & & -\frac{1}{h} & \frac{1}{h} & 0 &\\ & & & & 0 & 1 \end{pmatrix}\]
+\form#44:$ D_{0} $
+\form#45:\[ \frac{\partial u}{\partial x}\Big|_{x=x_i} \approx \frac{u_{i+1}-u_{i-1}}{2h} = D_{0} u_{i} \]
+\form#46:$u_{i+1} = f(x_{i}+h), u_{i-1} = f(x_i - h)$
+\form#47:\[\begin{pmatrix} 1 & 0 \\ -\frac{1}{2h} &0& \frac{1}{2h} \\ & -\frac{1}{2h} &0& \frac{1}{2h} \\ & & \ddots & \ddots & \ddots \\ & & & -\frac{1}{2h} &0& \frac{1}{2h} & \\ & & & & 0 & 1 \end{pmatrix}\]
+\form#48:\[ \frac{\partial u}{\partial x}\Big|_{x=x_i} \approx \frac{h^2_i u_{i+1} + (h^2_{i+1} - h^2_i) u_i - h^2_{i+1}u_{i-1} }{ h_i h_{i+1} (h_i+h_{i+1})} = D_{0} u_{i} \]
+\form#49:$u_i = f(x_i), h_i = x_i - x_{i-1}$
+\form#50:\[\begin{pmatrix} 1& 0 \\ -\frac{h^2_{1}}{h_0 h_{1}(h_0+h_{1})} & \frac{h^2_1 - h^2_0}{h_0 h_{1}(h_0+h_{1})} & \frac{h^2_0}{h_0 h_{1}(h_0+h_{1})} \\ & -\frac{h^2_{2}}{h_1 h_{2}(h_1+h_{2})} & \frac{h^2_2 - h^2_1}{h_1 h_{2}(h_1+h_{2})} & \frac{h^2_1}{h_1 h_{2}(h_1+h_{2})} \\ & & \ddots & \ddots & \ddots \\ & & & -\frac{h^2_{n}}{h_{n-1} h_{n}(h_{n-1}+h_{n})} & \frac{h^2_{n} - h^2_{n-1}}{h_{n-1} h_{n}(h_{n-1}+h_{n})} & \frac{h^2_{n-1}}{h_{n-1} h_{n}(h_{n-1}+h_{n})} & \\ & & & & 0 & 1 \end{pmatrix}\]
+\form#51:$ D_{+-} $
+\form#52:\[ \frac{\partial^2 u}{\partial x^2}\Big|_{x=x_i} \approx \frac{u_{i+1} - 2u_{i}+u_{i-1}}{h^2} = D_{+-} u_{i} \]
+\form#53:$u_{i+1} = f(x_{i}+h), u_{i} = f(x_i), u_{i-1} = f(x_i - h)$
+\form#54:\[\begin{pmatrix} 1 & 0 \\ \frac{1}{h^2} & -\frac{2}{h^2} & \frac{1}{h^2} \\ & \frac{1}{h^2} & -\frac{2}{h^2} & \frac{1}{h^2} \\ & & \ddots & \ddots & \ddots \\ & & & \frac{1}{h^2} & -\frac{2}{h^2}& \frac{1}{h^2} & \\ & & & & 0 & 1 \end{pmatrix}\]
+\form#55:\[ \frac{\partial^2 u}{\partial x^2}\Big|_{x=x_i} \approx 2\frac{h_i u_{i+1} - (h_{i+1} + h_i) u_i + h_{i+1}u_{i-1} }{ h_i h_{i+1} (h_i+h_{i+1})} = D_{0} u_{i} \]
+\form#56:\[\begin{pmatrix} 1& 0 \\ \frac{2h_{1}}{h_0 h_{1}(h_0+h_{1})} & -\frac{2(h_1 + h_0)}{h_0 h_{1}(h_0+h_{1})} & \frac{2h_0}{h_0 h_{1}(h_0+h_{1})} \\ & \frac{2h_{2}}{h_1 h_{2}(h_1+h_{2})} & -\frac{2(h_2 + h_1)}{h_1 h_{2}(h_1+h_{2})} & \frac{2h_1}{h_1 h_{2}(h_1+h_{2})} \\ & & \ddots & \ddots & \ddots \\ & & & \frac{2h_{n}}{h_{n-1} h_{n}(h_{n-1}+h_{n})} & -\frac{2(h_{n} + h_{n-1})}{h_{n-1} h_{n}(h_{n-1}+h_{n})} & \frac{2h_{n-1}}{h_{n-1} h_{n}(h_{n-1}+h_{n})} & \\ & & & & 0 & 1 \end{pmatrix}\]
+\form#57:\[\begin{pmatrix} 1 & 0 \\ 0 & 1 & 0 \\ & 0 & 1 & 0 \\ & & \ddots & \ddots & \ddots \\ & & & 0 & 1 & 0 & \\ & & & & 0 & 1 \end{pmatrix}\]
+\form#58:$w$
+\form#59:$A$
+\form#60:\[ \begin{aligned} Price & = i_{cp} (S N(i_{cp} d_{1}) - K e^{-r T} N(i_{cp} d_{2})) \\ d_{1} & = \frac{ln(\frac{S}{K}) + (r + \frac{\sigma^2}{2}) T}{\sigma \sqrt{T}} \\ d_{2} & = \frac{ln(\frac{S}{K}) + (r - \frac{\sigma^2}{2}) T}{\sigma \sqrt{T}} \end{aligned}\]
+\form#61:$S$
+\form#62:$K$
+\form#63:$\sigma$
+\form#64:$r$
+\form#65:$i_{cp}$
+\form#66:$N()$
+\form#67:$\lim_{x \to -\infty} V(ln S_t,t) = 0.$
+\form#68:$\lim_{x \to \infty} V(ln S_t,t) = S.$
+\form#69:$\lim_{S \to 0} V(lS_t,t) = a \Rightarrow \lim_{x \to low*S} V(S_t,t) = a.$
+\form#70:$\lim_{S \to \infty} V(lS_t,t) = a \Rightarrow \lim_{x \to upp*S} V(S_t,t) = a.$
+\form#71:\[max(spot_{T}-K,0)\]
+\form#72:\[max(K-spot_{T},0)\]
+\form#73:$\lim_{S \to 0} C(S) = 0$
+\form#74:$\lim_{S \to \infty} f(x) = S-K$
+\form#75:$\lim_{S \to 0} C(S) = K-S$
+\form#76:$\lim_{S \to \infty} f(x) = 0$
+\form#77:\[initial(s) = max(i_{cp}(S-K))\]
+\form#78:$-\infty$
+\form#79:\[f(s) = max(i_{cp}(S-K))\]
+\form#80:\[CDF_{X}(t) = \int^{t}_{-\infty} \frac{1}{\sqrt{2\pi \sigma^{2}}}e^{-\frac{(x-\mu )^{2}}{2\sigma ^{2}}} dx \]
+\form#81:$y$
+\form#82:$x$
+\form#83:$(x_j,y_j)$
+\form#84:$(x_{j+1},y_{j+1})$
+\form#85:$(x,y)$
+\form#86:\[ y = y_j + \frac{y_{j+1} - y_j}{x_{j+1} - x_j} (t-x_j)\]
+\form#87:\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}S^{2}{\frac {\partial ^{2}V}{\partial S^{2}}}+rS{\frac {\partial V}{\partial S}}-rV=0\]
+\form#88:$V$
+\form#89:$s$
+\form#90:$x=ln S$
+\form#91:\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}{\frac {\partial ^{2}V}{\partial x^{2}}}+(r-\frac{\sigma^2}{2}){\frac {\partial V}{\partial x}}-rV=0\]
+\form#92:$\frac{\sigma^2}{2}$
+\form#93:$r-\frac{\sigma^2}{2}$
+\form#94:\[f(x) = n(x, 0.2, 0.25) + n(x, 1.5, 0.5) + n(x, -2.0, 1.5) \]
+\form#95:\[\frac{d p(t,x)}{dt} = \Big(\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x} + \gamma \Big) p(t,x) \]
+\form#96:$\sigma = 0.2, \mu = 0.1$
+\form#97:$\gamma = 0.2$
