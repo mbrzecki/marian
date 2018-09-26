@@ -8,12 +8,16 @@
 	Project is aimed at providing a framework for solving parabolic Partial Differential Equation, that can be used to model convection/diffusion phenomena, heat transport or even financial instrument pricing.	
 
 	The name of the project refers to polish physicist <a href = "https://en.wikipedia.org/wiki/Marian_Smoluchowski">  Marian Smoluchowski</a> who was a pioneer of statistical physics and the kinetic theory of matter.
-	His pioneering works concerned existence of density fluctuations in the gas phase (which help to explain why sky is blue), Brownian Motion and 
+	His pioneering works concerned existence of density fluctuations in the gas phase (which help to explain why sky is blue), Brownian Motion and theory of diffusion.
 	
 	He was also avid mountaineer and watercolour painter. Below one of his works \a Alpine \a Landscape
 	@image html logo.jpg
 	
-	Project is mostly basing mostly on \a Modelling \a Derivatives \a in \a C++  J.London's book (\cite london). 
+	Project is basing mostly on \a Modelling \a Derivatives \a in \a C++  J.London's book (\cite london). 
+	
+	Compilation
+    =============
+	Folder \b build contains CMake script generating Makefile. CMake script creates compilation executables basing on cpp files kept in \b example folder.
 	
     Documentation
     =============
