@@ -143,7 +143,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <tr class="separator:a6a589d48a0baaed717299a583739bb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63dd18a3754c4c0b2409cd0abde4f9c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63dd18a3754c4c0b2409cd0abde4f9c0"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmarian_1_1EuroOptFactory.html#a63dd18a3754c4c0b2409cd0abde4f9c0">upperSpotLmt</a> () override</td></tr>
-<tr class="memdesc:a63dd18a3754c4c0b2409cd0abde4f9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <img class="formulaInl" alt="$-\infty$" src="form_78.png"/> as upper limit of the spot. <br /></td></tr>
+<tr class="memdesc:a63dd18a3754c4c0b2409cd0abde4f9c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <img class="formulaInl" alt="$-\infty$" src="form_77.png"/> as upper limit of the spot. <br /></td></tr>
 <tr class="separator:a63dd18a3754c4c0b2409cd0abde4f9c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39fe66a801f04d2f6ae66f676c0af4fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39fe66a801f04d2f6ae66f676c0af4fd"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmarian_1_1EuroOptFactory.html#a39fe66a801f04d2f6ae66f676c0af4fd">getConcentrationPoint</a> () override</td></tr>
@@ -183,16 +183,16 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 <div class="textblock"><p>Parametrization provided by the class is as follows:</p>
 <h2>Initial condition </h2>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[f(s) = max(i_{cp}(S-K))\]" src="form_79.png"/>
+<img class="formulaDsp" alt="\[f(s) = max(i_{cp}(S-K))\]" src="form_78.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$i_{cp}$" src="form_65.png"/> is equal to 1 if option type is CALL and -1 otherwise. </p><h2>Boundary condition </h2>
+<p> where <img class="formulaInl" alt="$i_{cp}$" src="form_64.png"/> is equal to 1 if option type is CALL and -1 otherwise. </p><h2>Boundary condition </h2>
 <p>For call option</p><ul>
-<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = 0$" src="form_73.png"/></li>
-<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = S-K$" src="form_74.png"/></li>
+<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = 0$" src="form_72.png"/></li>
+<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = S-K$" src="form_73.png"/></li>
 </ul>
 <p>For put option</p><ul>
-<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = K-S$" src="form_75.png"/></li>
-<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = 0$" src="form_76.png"/></li>
+<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = K-S$" src="form_74.png"/></li>
+<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = 0$" src="form_75.png"/></li>
 </ul>
 <h2>Concentration parameter for non-uniform grid </h2>
 <p><a class="el" href="classmarian_1_1Option.html" title="Interface for financial derivativesClass implements abstraction of financial option. ">Option</a>'s strike </p>
@@ -266,12 +266,12 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table>
 </div><div class="memdoc">
 <p>For call option</p><ul>
-<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = 0$" src="form_73.png"/></li>
-<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = S-K$" src="form_74.png"/></li>
+<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = 0$" src="form_72.png"/></li>
+<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = S-K$" src="form_73.png"/></li>
 </ul>
 <p>For put option</p><ul>
-<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = K-S$" src="form_75.png"/></li>
-<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = 0$" src="form_76.png"/> </li>
+<li>lower boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to 0} C(S) = K-S$" src="form_74.png"/></li>
+<li>upper boundary: Dirichlet condition <img class="formulaInl" alt="$\lim_{S \to \infty} f(x) = 0$" src="form_75.png"/> </li>
 </ul>
 
 <p>Implements <a class="el" href="classmarian_1_1AbstractPricerFactory.html#a78074770ee3eed662eab8ef0474b7957">marian::AbstractPricerFactory</a>.</p>
@@ -300,9 +300,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table>
 </div><div class="memdoc">
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[initial(s) = max(i_{cp}(S-K))\]" src="form_77.png"/>
+<img class="formulaDsp" alt="\[initial(s) = max(i_{cp}(S-K))\]" src="form_76.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$i_{cp}$" src="form_65.png"/> is equal to 1 if option type is CALL and -1 otherwise. </p>
+<p> where <img class="formulaInl" alt="$i_{cp}$" src="form_64.png"/> is equal to 1 if option type is CALL and -1 otherwise. </p>
 
 <p>Implements <a class="el" href="classmarian_1_1AbstractPricerFactory.html#a243e811ea3616fa0c87c84b6bebbf80d">marian::AbstractPricerFactory</a>.</p>
 

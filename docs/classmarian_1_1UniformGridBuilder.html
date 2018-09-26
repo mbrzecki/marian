@@ -147,16 +147,16 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The grid is defined as: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[x_0 = x_{low} \]" src="form_14.png"/>
+<img class="formulaDsp" alt="\[x_0 = x_{low} \]" src="form_13.png"/>
 </p>
  <p class="formulaDsp">
-<img class="formulaDsp" alt="\[ x_{i+1} = x_i + i \delta_x \]" src="form_15.png"/>
+<img class="formulaDsp" alt="\[ x_{i+1} = x_i + i \delta_x \]" src="form_14.png"/>
 </p>
-<p> for <img class="formulaInl" alt="$ i=1,\dots,N$" src="form_16.png"/>, where <img class="formulaInl" alt="$\delta_x = \frac{x_{upp} - x_{low}}{N}$" src="form_17.png"/></p>
+<p> for <img class="formulaInl" alt="$ i=1,\dots,N$" src="form_15.png"/>, where <img class="formulaInl" alt="$\delta_x = \frac{x_{upp} - x_{low}}{N}$" src="form_16.png"/></p>
 <p>Below the code generating 2d grid and its visualization. </p><div class="fragment"><div class="line"><a class="code" href="classmarian_1_1UniformGridBuilder.html#a2720be9dcb4b063b8e5eaf16c72dd757">UniformGridBuilder</a> ugb;</div><div class="line"><span class="keyword">auto</span> grid1 = ugb.buildGrid(0.0, 10.0, 25);</div><div class="line"><span class="keyword">auto</span> grid2 = ugb.buildGrid(0.0,  5.0, 20);</div><div class="line"><span class="keywordflow">for</span> (<span class="keyword">auto</span> x : grid1) {</div><div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span> y : grid2) {</div><div class="line">    std::cout &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;;&quot;</span> &lt;&lt; y &lt;&lt; std::endl;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><div class="image">
 <img src="uniform.png" alt="uniform.png"/>
 </div>
- <dl><dt><b>Examples: </b></dt><dd><a class="el" href="convergenceExample_8cpp-example.html#_a1">convergenceExample.cpp</a>, <a class="el" href="EuroOptExample_8cpp-example.html#_a5">EuroOptExample.cpp</a>, and <a class="el" href="FokkerPlackEqExample_8cpp-example.html#_a4">FokkerPlackEqExample.cpp</a>.</dd>
+ <dl><dt><b>Examples: </b></dt><dd><a class="el" href="convergenceExample_8cpp-example.html#_a1">convergenceExample.cpp</a>, <a class="el" href="EuroOptExample_8cpp-example.html#_a5">EuroOptExample.cpp</a>, and <a class="el" href="FokkerPlanckEqExample_8cpp-example.html#_a4">FokkerPlanckEqExample.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a7672d436a708dd62f2e9292b70cc3863"></a>
 <div class="memitem">
@@ -211,7 +211,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </dl>
 
 <p>Implements <a class="el" href="classmarian_1_1GridBuilder.html#a6b0c5b6a00adc5d6fe82c4f61caa86ca">marian::GridBuilder</a>.</p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="FokkerPlackEqExample_8cpp-example.html#a5">FokkerPlackEqExample.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="FokkerPlanckEqExample_8cpp-example.html#a5">FokkerPlanckEqExample.cpp</a>.</dd>
 </dl>
 </div>
 </div>

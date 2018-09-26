@@ -155,13 +155,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class is used to generate non-uniform grid. The algorithm is basing on method proposed by Tavella &amp; Randall <a class="el" href="citelist.html#CITEREF_Tavella">[3]</a> and Kluge <a class="el" href="citelist.html#CITEREF_Kluge">[15]</a> and briefly described and discussed by Hout &amp; Foulon in <a class="el" href="citelist.html#CITEREF_Hout">[8]</a>.</p>
-<p>The grid build on interval <img class="formulaInl" alt="$(x_{min},x_{max})$" src="form_8.png"/> with a concentration point <img class="formulaInl" alt="$x_K$" src="form_9.png"/> and <b>c</b> control parameter is constructed in following steps:</p>
+<p>The grid build on interval <img class="formulaInl" alt="$(x_{min},x_{max})$" src="form_7.png"/> with a concentration point <img class="formulaInl" alt="$x_K$" src="form_8.png"/> and <b>c</b> control parameter is constructed in following steps:</p>
 <p>1) We define uniform grid </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[t_i = arcsinh\big(\frac{-k}{c} + i \delta t\big)\]" src="form_10.png"/>
+<img class="formulaDsp" alt="\[t_i = arcsinh\big(\frac{-k}{c} + i \delta t\big)\]" src="form_9.png"/>
 </p>
-<p> where <img class="formulaInl" alt="$k = \frac{x_K-x_{min}}{x_{max} - x_{min}}$" src="form_11.png"/> and <img class="formulaInl" alt="$\delta t = \frac{1}{M} \Big(arcsinh\big(\frac{t_{max}-k}{c}\big) - arcsinh\big(\frac{-k}{c}\big)\Big)$" src="form_12.png"/>:</p>
+<p> where <img class="formulaInl" alt="$k = \frac{x_K-x_{min}}{x_{max} - x_{min}}$" src="form_10.png"/> and <img class="formulaInl" alt="$\delta t = \frac{1}{M} \Big(arcsinh\big(\frac{t_{max}-k}{c}\big) - arcsinh\big(\frac{-k}{c}\big)\Big)$" src="form_11.png"/>:</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[s_i = x_{min} + (k + c \times sinh(t_i))\]" src="form_13.png"/>
+<img class="formulaDsp" alt="\[s_i = x_{min} + (k + c \times sinh(t_i))\]" src="form_12.png"/>
 </p>
 <p>Below plot presents the construction of non-uniform grid for different control parameters </p><div class="image">
 <img src="nonuniform_param.png" alt="nonuniform_param.png"/>

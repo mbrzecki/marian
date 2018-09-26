@@ -256,8 +256,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The idea of linear interpolation of set of point is to approximate value <img class="formulaInl" alt="$y$" src="form_81.png"/> at a point <img class="formulaInl" alt="$x$" src="form_82.png"/> by a straight line passing through two data points <img class="formulaInl" alt="$(x_j,y_j)$" src="form_83.png"/> and <img class="formulaInl" alt="$(x_{j+1},y_{j+1})$" src="form_84.png"/> closest to <img class="formulaInl" alt="$(x,y)$" src="form_85.png"/>. The formula for linear interpolation is: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ y = y_j + \frac{y_{j+1} - y_j}{x_{j+1} - x_j} (t-x_j)\]" src="form_86.png"/>
+<p>The idea of linear interpolation of set of point is to approximate value <img class="formulaInl" alt="$y$" src="form_80.png"/> at a point <img class="formulaInl" alt="$x$" src="form_81.png"/> by a straight line passing through two data points <img class="formulaInl" alt="$(x_j,y_j)$" src="form_82.png"/> and <img class="formulaInl" alt="$(x_{j+1},y_{j+1})$" src="form_83.png"/> closest to <img class="formulaInl" alt="$(x,y)$" src="form_84.png"/>. The formula for linear interpolation is: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ y = y_j + \frac{y_{j+1} - y_j}{x_{j+1} - x_j} (t-x_j)\]" src="form_85.png"/>
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -287,13 +287,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>The data defining : asset price, risk free rate and volatility of asset price. Under the assumptions of Black-Scholes model (see <a class="el" href="citelist.html#CITEREF_BlackScholes">[4]</a>) the price of derivative instruments satisfies the equation: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}S^{2}{\frac {\partial ^{2}V}{\partial S^{2}}}+rS{\frac {\partial V}{\partial S}}-rV=0\]" src="form_87.png"/>
+<img class="formulaDsp" alt="\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}S^{2}{\frac {\partial ^{2}V}{\partial S^{2}}}+rS{\frac {\partial V}{\partial S}}-rV=0\]" src="form_86.png"/>
 </p>
-<p> where: <img class="formulaInl" alt="$V$" src="form_88.png"/> is the price of derivative, <img class="formulaInl" alt="$s$" src="form_89.png"/> asset price, <img class="formulaInl" alt="$\sigma$" src="form_63.png"/> volatility and <img class="formulaInl" alt="$r$" src="form_64.png"/> is risk free rate.</p>
-<p>After applying transformation <img class="formulaInl" alt="$x=ln S$" src="form_90.png"/> the PDE will have a form: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}{\frac {\partial ^{2}V}{\partial x^{2}}}+(r-\frac{\sigma^2}{2}){\frac {\partial V}{\partial x}}-rV=0\]" src="form_91.png"/>
+<p> where: <img class="formulaInl" alt="$V$" src="form_87.png"/> is the price of derivative, <img class="formulaInl" alt="$s$" src="form_88.png"/> asset price, <img class="formulaInl" alt="$\sigma$" src="form_62.png"/> volatility and <img class="formulaInl" alt="$r$" src="form_63.png"/> is risk free rate.</p>
+<p>After applying transformation <img class="formulaInl" alt="$x=ln S$" src="form_89.png"/> the PDE will have a form: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}{\frac {\partial ^{2}V}{\partial x^{2}}}+(r-\frac{\sigma^2}{2}){\frac {\partial V}{\partial x}}-rV=0\]" src="form_90.png"/>
 </p>
-<p>Above PDE is a Backward Kolmogorov Equation associated with stochastic process: diffusion term <img class="formulaInl" alt="$\frac{\sigma^2}{2}$" src="form_92.png"/>, convection term <img class="formulaInl" alt="$r-\frac{\sigma^2}{2}$" src="form_93.png"/> and decay term <img class="formulaInl" alt="$r$" src="form_64.png"/>. </p>
+<p>Above PDE is a Backward Kolmogorov Equation associated with stochastic process: diffusion term <img class="formulaInl" alt="$\frac{\sigma^2}{2}$" src="form_91.png"/>, convection term <img class="formulaInl" alt="$r-\frac{\sigma^2}{2}$" src="form_92.png"/> and decay term <img class="formulaInl" alt="$r$" src="form_63.png"/>. </p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Function calculates Cumulative Distribution Function for standard normal distribution.</p>
 <p class="formulaDsp">
-<img class="formulaDsp" alt="\[CDF_{X}(t) = \int^{t}_{-\infty} \frac{1}{\sqrt{2\pi \sigma^{2}}}e^{-\frac{(x-\mu )^{2}}{2\sigma ^{2}}} dx \]" src="form_80.png"/>
+<img class="formulaDsp" alt="\[CDF_{X}(t) = \int^{t}_{-\infty} \frac{1}{\sqrt{2\pi \sigma^{2}}}e^{-\frac{(x-\mu )^{2}}{2\sigma ^{2}}} dx \]" src="form_79.png"/>
 </p>
 <p>Algorithm is basing on ERF function and its relation to Standard Normal Distribution (see formula 7.1.26 in <a class="el" href="citelist.html#CITEREF_abramovitz">[12]</a>)</p>
 <dl class="params"><dt>Parameters</dt><dd>

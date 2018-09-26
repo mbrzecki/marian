@@ -149,10 +149,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>When we solve following parabolic PDE: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[\frac{df(x,t)}{dt} = L f(x,t)\]" src="form_20.png"/>
+<img class="formulaDsp" alt="\[\frac{df(x,t)}{dt} = L f(x,t)\]" src="form_19.png"/>
 </p>
 <p> where <b>L</b> is linear operator, we can use different time discretization scheme, for example: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \begin{aligned} \text{in case of Forward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} &amp; = \hat{L} f(x_i,t_{j+1}) \Rightarrow f(x_i,t_{j+1})= (I + (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j}) \\ \text{in case of Backward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} &amp; = \hat{L} f(x_i,t_{j}) \Rightarrow f(x_i,t_{j+1})= (I - (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j+1}) \end{aligned} \]" src="form_21.png"/>
+<img class="formulaDsp" alt="\[ \begin{aligned} \text{in case of Forward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} &amp; = \hat{L} f(x_i,t_{j+1}) \Rightarrow f(x_i,t_{j+1})= (I + (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j}) \\ \text{in case of Backward Equation: }\frac{f(x_i,t_{j+1})-f(x_i,t_{j})}{t_{j+1}-t_{j}} &amp; = \hat{L} f(x_i,t_{j}) \Rightarrow f(x_i,t_{j+1})= (I - (t_{j+1}-t_{j})\hat{L}) f(x_i,t_{j+1}) \end{aligned} \]" src="form_20.png"/>
 </p>
 <p> For more information see <a class="el" href="citelist.html#CITEREF_DuffyFDM">[2]</a> <a class="el" href="citelist.html#CITEREF_ClarkFx">[5]</a> <a class="el" href="citelist.html#CITEREF_MortonMayers">[10]</a> . </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="convergenceExample_8cpp-example.html#_a4">convergenceExample.cpp</a>.</dd>

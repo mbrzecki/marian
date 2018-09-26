@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8fa1df26e67c04dd6e39d7f7c865e043"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor <br /></td></tr>
 <tr class="separator:a8fa1df26e67c04dd6e39d7f7c865e043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3889ae4a3c8562a683ba277c3ce32e87"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmarian_1_1ForwardKolmogorowEquation.html#a3889ae4a3c8562a683ba277c3ce32e87">solve</a> (<a class="el" href="classmarian_1_1SmartPointer.html">SmartPointer</a>&lt; <a class="el" href="classmarian_1_1FDScheme.html">FDScheme</a> &gt; scheme, std::vector&lt; double &gt; init, std::vector&lt; <a class="el" href="classmarian_1_1SmartPointer.html">SmartPointer</a>&lt; <a class="el" href="classmarian_1_1BoundaryCondition.html">BoundaryCondition</a> &gt; &gt; bcs, std::vector&lt; double &gt; spatial_grid, std::vector&lt; double &gt; time_grid)</td></tr>
-<tr class="memdesc:a3889ae4a3c8562a683ba277c3ce32e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves.  <a href="#a3889ae4a3c8562a683ba277c3ce32e87">More...</a><br /></td></tr>
+<tr class="memdesc:a3889ae4a3c8562a683ba277c3ce32e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves forward equation.  <a href="#a3889ae4a3c8562a683ba277c3ce32e87">More...</a><br /></td></tr>
 <tr class="separator:a3889ae4a3c8562a683ba277c3ce32e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06523684477046d80d07cc5e8a21303f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmarian_1_1ForwardKolmogorowEquation.html#a06523684477046d80d07cc5e8a21303f">solveAndSave</a> (<a class="el" href="classmarian_1_1SmartPointer.html">SmartPointer</a>&lt; <a class="el" href="classmarian_1_1FDScheme.html">FDScheme</a> &gt; scheme, std::vector&lt; double &gt; init, std::vector&lt; <a class="el" href="classmarian_1_1SmartPointer.html">SmartPointer</a>&lt; <a class="el" href="classmarian_1_1BoundaryCondition.html">BoundaryCondition</a> &gt; &gt; bcs, std::vector&lt; double &gt; spatial_grid, std::vector&lt; double &gt; time_grid, std::string file_name)</td></tr>
 <tr class="memdesc:a06523684477046d80d07cc5e8a21303f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves equation and save it to CSV file.  <a href="#a06523684477046d80d07cc5e8a21303f">More...</a><br /></td></tr>
@@ -140,11 +140,11 @@ Private Attributes</h2></td></tr>
 <img class="formulaDsp" alt="\[ dx(t)=\mu dt+\sigma dW(t)\]" src="form_1.png"/>
 </p>
 <p> then probability distribution p(t,x) of <b>x</b> is governed by the Kolmogorov forward equation </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[\frac{d p(t,x)}{dt} = \Big(\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x}\Big) p(t,x) \]" src="form_5.png"/>
+<img class="formulaDsp" alt="\[\frac{d p(t,x)}{dt} = \Big(\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial }{\partial x}\Big) p(t,x) \]" src="form_5.png"/>
 </p>
 <p> More information see <a class="el" href="citelist.html#CITEREF_Huang">[9]</a> <a class="el" href="citelist.html#CITEREF_kineticsPhysics">[11]</a></p>
 <p>This class is used to construct the PDE basing on diffusion process and solve it using finite difference method. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="FokkerPlackEqExample_8cpp-example.html#_a11">FokkerPlackEqExample.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="FokkerPlanckEqExample_8cpp-example.html#_a11">FokkerPlanckEqExample.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af01823fffc8600c23e5ea6fbff79cca4"></a>
 <div class="memitem">
@@ -159,9 +159,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The operator is given as: </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[\hat{L} = \frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu (t,x) \frac{\partial^2 }{\partial x} \]" src="form_6.png"/>
-</p>
 <p>The operator is given as: </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[\hat{L} = \frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x} \]" src="form_4.png"/>
 </p>
@@ -209,7 +206,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Solves forward equation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scheme</td><td>Differential scheme </td></tr>
@@ -283,8 +279,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Solution in form of std::vector </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="FokkerPlackEqExample_8cpp-example.html#a12">FokkerPlackEqExample.cpp</a>.</dd>
-</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
