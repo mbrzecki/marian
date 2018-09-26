@@ -17,7 +17,7 @@ namespace marian {
    * Let's assume that the physical system state \b x(t) evolves according to the stochastic differential equation
    * \f[ dx(t)=\mu dt+\sigma dW(t)\f]
    * then probability distribution p(t,x) of \b x is governed by the Kolmogorov backward equation
-   * \f[\frac{d p(t,x)}{dt} = \Big(-\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu  \frac{\partial^2 }{\partial x}\Big) p(t,x)  \f]
+   * \f[\frac{d p(t,x)}{dt} = \Big(-\frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu  \frac{\partial}{\partial x}\Big) p(t,x)  \f]
    * Above equation can be derived using Feynman-Kac theorem.
    * More information see \cite Huang \cite kineticsPhysics
    *

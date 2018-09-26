@@ -46,7 +46,7 @@ namespace marian {
    *
    *
    * The operator is given as:
-   * \f[\hat{L} = \frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial^2 }{\partial x}  \f]
+   * \f[\hat{L} = \frac{1}{2}\sigma^2 \frac{\partial^2 }{\partial x^2} - \mu \frac{\partial }{\partial x}  \f]
    */
   TridiagonalOperator ForwardKolmogorowEquation::getOperator(const std::vector<double>& spatial_grid) {
     auto d0 = TridiagonalOperator::I(spatial_grid);
