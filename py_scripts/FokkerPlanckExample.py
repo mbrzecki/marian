@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
 
-df = pd.DataFrame.from_csv(r".\build\fokker_plack_equation.csv",sep=';',index_col=None)
+df = pd.DataFrame.from_csv(r"C:\Unix\home\OEM\fdm\build\fokker_planck_equation.csv",sep=';',index_col=None)
 ylim = max(df['f'])
 time = sorted(list(set(df['T'].tolist())))
 
@@ -43,4 +43,4 @@ def plot_for_offset(data,t):
 
     return image
 
-imageio.mimsave('./FokkerPlackExample.gif', [plot_for_offset(df,t) for t in time], fps=20)
+imageio.mimsave(r'C:\Unix\home\OEM\fdm\build\fokkerPlackExample.gif', [plot_for_offset(df,t) for t in time], fps=20)

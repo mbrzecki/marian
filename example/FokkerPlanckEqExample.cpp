@@ -51,7 +51,7 @@ int main () {
   int ntemporal = 400;
   UniformGridBuilder ugb;
   auto spatial_grid  = ugb.buildGrid(-5.0, 5.0, nspatial);
-  auto temporal_grid = ugb.buildGrid( 0.0, 1.5, ntemporal);
+  auto temporal_grid = ugb.buildGrid( 0.0, 1.0, ntemporal);
 
   //
   // Boundary conditions
@@ -75,5 +75,5 @@ int main () {
   CrankNicolsonScheme cnscheme(trisolver);
   ForwardKolmogorowEquation fokker_planck_equation(process);
 
-  auto fdmcn = fokker_plack_equation.solveAndSave(cnscheme, f, bcs, spatial_grid, temporal_grid, "fokker_planck_equation");
+  auto fdmcn = fokker_planck_equation.solveAndSave(cnscheme, f, bcs, spatial_grid, temporal_grid, "fokker_planck_equation");
 }
