@@ -43,15 +43,15 @@ add_library(maniek OBJECT ${SOURCES})
 # creating executables on the basis of cpp files in mains directory
 
 file( GLOB APP_SOURCES "../example/*.cpp" )
-foreach( testsourcefile ${APP_SOURCES} )
+foreach( sourcefiles ${APP_SOURCES} )
 
-	 string( REGEX REPLACE "^.*/example/" "" newstring ${testsourcefile})
-	 string( REPLACE ".cpp" "" testname ${newstring} )
-	 string( CONCAT path [../test2 ${newsrting} "/" ${testname} ".cpp" ])
+	 string( REGEX REPLACE "^.*/example/" "" rawpath ${sourcefiles})
+	 string( REPLACE ".cpp" "" filename ${rawpath} )
+	 string( CONCAT path [ ${rawpath} "/" ${filename} ".cpp" ])
 	 string( REPLACE "[" "" path ${path} )
 	 string( REPLACE "]" "" path ${path} )
 
-	 add_executable( ${testname} ${testsourcefile} $<TARGET_OBJECTS:maniek>)
-	 target_link_libraries(${testname} ${LINK_FLAG})
+	 add_executable( ${filename} ${sourcefiles} $<TARGET_OBJECTS:maniek>)
+	 target_link_libraries(${filename} ${LINK_FLAG})
 	 
-endforeach( testsourcefile ${APP_SOURCES} )
+endforeach( sourcefiles ${APP_SOURCES} )
